@@ -1,14 +1,14 @@
-cask "charforge" do
+cask "soulforge" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.5.0"
-  sha256 arm:   "c26e17c47111de665d9d80055f80ce2af8ce6d044be742e8873bcae47da1e31b",
-         intel: "ae436fd83a18befcb80a1cc9ff4d4c0b98f7e1adf363c6b99a9cad762b3e54be"
+  version "0.6.0"
+  sha256 arm:   "3681aa3fa211acff0f7339e9787cccca35f2a2ede8403d89111469a41e437ba6",
+         intel: "87a6591d9491dc9f161552b92bb5645ff2f4479b50cdc37e59047a02f9581cfb"
 
-  url "https://github.com/hrozno2/charforge/releases/download/v#{version}/CharForge_#{version}_#{arch}.dmg"
-  name "CharForge"
+  url "https://github.com/hrozno2/SoulForge/releases/download/v#{version}/SoulForge_#{version}_#{arch}.dmg"
+  name "Soul Forge"
   desc "D&D 5e (2024) character builder with custom modifiers and PDF export"
-  homepage "https://github.com/hrozno2/charforge"
+  homepage "https://github.com/hrozno2/SoulForge"
 
   livecheck do
     url :url
@@ -18,12 +18,12 @@ cask "charforge" do
   # The app updates itself, so Homebrew should not reinstall it on every `brew upgrade`.
   auto_updates true
 
-  app "CharForge.app"
+  app "SoulForge.app"
 
   # The app is not notarized, so clear the quarantine flag to avoid the "damaged" warning.
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/CharForge.app"]
+                   args: ["-cr", "#{appdir}/SoulForge.app"]
   end
 
   zap trash: [
