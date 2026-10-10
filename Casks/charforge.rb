@@ -1,9 +1,9 @@
 cask "charforge" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "66a1629f1115329740f58ccd1c7a78da301591108a1942747db5b5c82e05be83",
-         intel: "6f379bd7ae760e57175ff272c43b20abcff56977dade2701fc62e4f5cdc5b304"
+  version "0.3.0"
+  sha256 arm:   "076c33bc889c9aa03f2d448228fc08d09643c0c1da39e792abfb00161763b6ee",
+         intel: "0840f9503b664645e576fdfb1324d165261e3b50deefc70228993e493c0bea47"
 
   url "https://github.com/hrozno2/charforge/releases/download/v#{version}/CharForge_#{version}_#{arch}.dmg"
   name "CharForge"
