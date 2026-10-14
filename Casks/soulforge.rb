@@ -1,9 +1,9 @@
 cask "soulforge" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.11.0"
-  sha256 arm:   "987915392f54b74f41f4cc4c1219f7d9e3019eef06c2f3296607aa7676329804",
-         intel: "ad0e1e9b3b5b21055cb986f969bc53fb0b1c5df89b6ff321461dd1819bb32bc9"
+  version "0.12.0"
+  sha256 arm:   "9b277e7369a0f9cce1cf86a691a97321f74aba3384c5d60324a8021875cf25e4",
+         intel: "75b90214577039c59ff4336d2cba2ceb1247dd579d2a77943ddfb8df0916472c"
 
   url "https://github.com/hrozno2/SoulForge/releases/download/v#{version}/SoulForge_#{version}_#{arch}.dmg"
   name "Soul Forge"
